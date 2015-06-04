@@ -18,4 +18,24 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+  @include outer-container;
+  background-color: $medium-gray;
+}
+
+.login-form {
+  @include span-columns(2);
+  @include shift(4.5);
+  margin-top: 300px;
+  vertical-align: middle;
+  text-align: center;
+
+  #submit {
+    background-color:white;
+    color: teal;
+  }
+
+  .login-form-usernme {
+    border-radius: 5px;
+    color: teal;
+  }
 }
